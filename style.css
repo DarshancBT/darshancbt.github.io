@@ -293,3 +293,45 @@ h3:hover {
   color: #93c5fd;
   border: 1px solid rgba(96,165,250,0.3);
 }
+.certificate {
+  display: none;
+  margin-top: 15px;
+}
+
+.certificate img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+  border: 2px solid #2563eb;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+.achievement-toggle {
+  cursor: pointer;
+}
+
+.achievement-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.achievement-header i {
+  transition: transform 0.3s ease;
+  color: #60a5fa;
+}
+
+/* Certificate container */
+.certificate {
+  display: none;
+  margin-top: 15px;
+  text-align: center;   /* CENTER alignment */
+}
+
+.certificate img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  border: 2px solid #2563eb;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+}
