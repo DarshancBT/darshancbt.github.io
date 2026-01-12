@@ -19,22 +19,15 @@
 
 <nav class="navbar">
   <div class="nav-name">Darshan C</div>
-
-  <div class="menu-toggle" onclick="toggleMenu()">
-  <i id="menuIcon" class="fas fa-bars"></i>
-</div>
-
-
-  <div class="nav-links" id="navLinks">
-    <a href="#about" onclick="closeMenu()">About Me</a>
-    <a href="#technical_skills" onclick="closeMenu()">Technical Skills</a>
-    <a href="#certifications" onclick="closeMenu()">Achievements</a>
-    <a href="#projects" onclick="closeMenu()">Projects</a>
-    <a href="#resume" onclick="closeMenu()">Resume</a>
-    <a href="#contact" onclick="closeMenu()">Contact</a>
+  <div class="nav-links">
+    <a href="#about">About me</a>
+    <a href="#technical_skills">Technical Skills</a>
+    <a href="#certifications">Achievements & Certifications</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
   </div>
 </nav>
-
 
 <header>
   <h1>Darshan C</h1>
@@ -340,7 +333,7 @@
 <section id="resume" style="text-align:center;">
   <h2>Resume</h2>
   <a href="resume.pdf" target="_blank" class="resume-btn">
-    View Resume
+    Download Resume
   </a>
 </section>
 
@@ -383,23 +376,8 @@
       arrow.style.transform = isOpen ? "rotate(0deg)" : "rotate(180deg)";
     });
   });
-</script><script>
-  function toggleMenu() {
-    document.getElementById("navLinks").classList.toggle("show");
-  }
-
-  function closeMenu() {
-    document.getElementById("navLinks").classList.remove("show");
-  }
 </script>
-
-
 
 </body>
 
 </html>
-
-
-
-
-
