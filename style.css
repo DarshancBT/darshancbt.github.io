@@ -103,6 +103,34 @@ ul {
     margin: 15px;
   }
 }
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    background-color: #020617;
+    flex-direction: column;
+    width: 220px;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.7);
+    display: none;
+  }
+
+  .nav-links a {
+    padding: 10px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
+
 
 
 
@@ -140,30 +168,42 @@ ul {
 .navbar {
   position: sticky;
   top: 0;
-  background-color: #ffffff;
+  background-color: rgba(2, 6, 23, 0.95);
+  backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 15px 25px;
   z-index: 1000;
 }
 
 .nav-name {
   font-size: 18px;
   font-weight: bold;
-  color: #0a192f;
+  color: #e5e7eb;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
 }
 
 .nav-links a {
-  margin-left: 20px;
   text-decoration: none;
-  color: #333;
+  color: #cbd5f5;
   font-weight: 500;
 }
 
 .nav-links a:hover {
-  color: #1f3c88;
+  color: #60a5fa;
+}
+
+/* Hamburger icon */
+.menu-toggle {
+  display: none;
+  font-size: 22px;
+  color: #60a5fa;
+  cursor: pointer;
 }
 @keyframes fadeUp {
   from {
@@ -335,3 +375,4 @@ h3:hover {
   border: 2px solid #2563eb;
   box-shadow: 0 12px 30px rgba(0,0,0,0.6);
 }
+
