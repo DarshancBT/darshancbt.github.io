@@ -383,63 +383,22 @@
       arrow.style.transform = isOpen ? "rotate(0deg)" : "rotate(180deg)";
     });
   });
-</script>
-<script>
-  const navLinks = document.getElementById("navLinks");
-  const menuToggle = document.querySelector(".menu-toggle");
-
+</script><script>
   function toggleMenu() {
-  navLinks.classList.toggle("show");
-
-  const icon = document.getElementById("menuIcon");
-  if (navLinks.classList.contains("show")) {
-    icon.classList.remove("fa-bars");
-    icon.classList.add("fa-times");
-  } else {
-    icon.classList.remove("fa-times");
-    icon.classList.add("fa-bars");
+    document.getElementById("navLinks").classList.toggle("show");
   }
-}
-
 
   function closeMenu() {
-    navLinks.classList.remove("show");
+    document.getElementById("navLinks").classList.remove("show");
   }
-
-  document.addEventListener("click", function (e) {
-    if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
-      closeMenu();
-    }
-  });
 </script>
 
-  <script>
-  const sections = document.querySelectorAll("section");
-  const navItems = document.querySelectorAll(".nav-links a");
-
-  window.addEventListener("scroll", () => {
-    let current = "";
-
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop - 80;
-      if (scrollY >= sectionTop) {
-        current = section.getAttribute("id");
-      }
-    });
-
-    navItems.forEach(a => {
-      a.classList.remove("active");
-      if (a.getAttribute("href") === "#" + current) {
-        a.classList.add("active");
-      }
-    });
-  });
-</script>
 
 
 </body>
 
 </html>
+
 
 
 
