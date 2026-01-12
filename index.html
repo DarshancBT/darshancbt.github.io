@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My First Website</title>
+  <title>Darshan C | Embedded & IoT Engineer | ESP32 | Flutter</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+      content="Darshan C is an Electrical and Electronics Engineering student specializing in Embedded Systems, IoT, ESP32, and Flutter app development. Portfolio showcasing projects, skills, and achievements.">
+  <meta name="author" content="Darshan C">
+  <meta name="keywords"
+        content="Darshan C, Embedded Engineer, IoT Developer, ESP32, ESP8266, Flutter, EEE Student, Embedded Systems Portfolio">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="profile.png" type="image/png">
+
 </head>
 <body>
+<nav class="navbar">
+  <div class="nav-name">Darshan C</div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
 
 <header>
   <h1>Darshan C</h1>
@@ -15,56 +34,260 @@
 <section style="text-align:center;">
   <img src="profile.jpg" alt="Darshan C" width="150">
 </section>
-
-
-<section>
+<section id="about">
   <h2>About Me</h2>
   <p>
-    I am an Electrical and Electronics Engineering student with strong interest
-    in embedded systems, IoT, and mobile app development.
+    I am an Electrical and Electronics Engineering student with a strong passion
+    for embedded systems, IoT, and smart automation. My core expertise lies in
+    designing ESP32-based systems that integrate hardware, firmware, and mobile
+    applications into reliable real-world solutions.
+  </p>
+  <p>
+    I enjoy working on projects that combine electronics and software, such as
+    smart security systems, healthcare monitoring devices, and solar-powered
+    automation solutions. I have hands-on experience in PCB design, sensor
+    integration, wireless communication, and Flutter-based app development for
+    real-time control and monitoring.
+  </p>
+  <p>
+    I am currently seeking internship opportunities where I can apply my
+    technical skills, learn from industry professionals, and contribute to
+    innovative projects in embedded systems, IoT, automotive electronics, and
+    smart technologies.
   </p>
 </section>
+<section id="skills">
+  <h2>Technical Skills</h2>
 
-<section>
-  <h2>Skills</h2>
+  <h3>Embedded Systems & Hardware</h3>
   <ul>
-    <li>ESP32 & ESP8266</li>
-    <li>Embedded C & Arduino</li>
-    <li>Flutter App Development</li>
-    <li>IoT & Automation</li>
+    <li>ESP32, ESP8266, Arduino UNO</li>
+    <li>Sensors, Relays, Actuators, Servos</li>
+    <li>TFT & OLED Displays</li>
+    <li>PCB Design & Hardware Prototyping</li>
+  </ul>
+
+  <h3>Programming & Firmware</h3>
+  <ul>
+    <li>C, C++, Python, Assembly, HTML, CSS</li>
+    <li>Embedded C & Microcontroller Programming</li>
+    <li>Object-Oriented Programming (OOP)</li>
+  </ul>
+
+  <h3>App Development</h3>
+  <ul>
+    <li>Flutter (Cross-platform mobile apps)</li>
+    <li>Android Development (Kotlin)</li>
+    <li>Real-time device monitoring & control apps</li>
+  </ul>
+
+  <h3>Communication & Networking</h3>
+  <ul>
+    <li>Wi-Fi (AP & STA modes)</li>
+    <li>Bluetooth, UART, I²C, SPI</li>
+    <li>UDP, TCP, HTTP</li>
+  </ul>
+
+  <h3>Tools & Design</h3>
+  <ul>
+    <li>Arduino IDE, PlatformIO, Keil µVision</li>
+    <li>NI Multisim, Tinkercad</li>
+    <li>Altium Designer, Solid Edge, Blender</li>
+    <li>Visual Studio Code, Windows 10/11</li>
   </ul>
 </section>
-<section>
+
+<section id="projects">
   <h2>Projects</h2>
 
-  <h3>InvisiLock</h3>
-  <p>
-    InvisiLock is an IoT-based smart security system that enables secure door
-    locking and unlocking using wireless communication, mobile applications,
-    and embedded controllers.
-  </p>
+  <div class="projects-grid">
 
-  <h3>MediWatch</h3>
-  <p>
-    MediWatch is a real-time patient health monitoring system that displays
-    heart rate, SpO₂, temperature, humidity, and IV drip status on a TFT
-    display and a connected mobile application.
-  </p>
+    <div class="project-card">
+      <div class="project-image"
+     style="background-image:url('invisilock.jpg');">
+</div>
 
-  <h3>ICU Patient Monitoring System</h3>
-  <p>
-    This system continuously monitors critical patient parameters and sends
-    real-time alerts to doctors and caretakers using wireless communication,
-    improving patient safety and response time.
-  </p>
+      <h3>InvisiLock – App Controlled Smart Door Lock System</h3>
+      <p>
+        InvisiLock is an IoT-based smart security system designed for home and office
+    environments. The system is built around an ESP32 microcontroller and is
+    fully controlled using a Flutter mobile application. It supports Wi-Fi
+    connectivity, multi-layer authentication, emergency access, and backup
+    power operation to ensure reliability during power failures.
+      </p>
+      <div class="tech-tags">
+  <span>ESP32</span>
+  <span>Flutter</span>
+  <span>Wi-Fi</span>
+  <span>IoT</span>
+</div>
+
+      <p class="role">Role: Embedded Systems & App Developer</p>
+    </div>
+
+    <div class="project-card">
+            <div class="project-image"
+     style="background-image:url('invisilock.jpg');">
+</div>
+
+      <h3>MediWatch – Real-Time Patient Health & IV Drip Monitoring System</h3>
+      <p>
+        MediWatch is a real-time healthcare monitoring system that continuously
+    tracks vital parameters such as heart rate, SpO₂, body temperature, room
+    temperature, humidity, and IV drip status. The system uses ESP32 and
+    biomedical sensors to collect data and wirelessly transmit it to a Flutter
+    mobile application, providing alerts for critical conditions.
+
+      </p>
+      <div class="tech-tags">
+  <span>ESP32</span>
+  <span>MAX30100</span>
+  <span>Flutter</span>
+  <span>Healthcare IoT</span>
+</div>
+
+      <p class="role">Role: IoT, Hardware & App Developer</p>
+    </div>
+
+    <div class="project-card">
+            <div class="project-image"
+     style="background-image:url('invisilock.jpg');">
+</div>
+
+      <h3>Smart Solar Electric Fence System</h3>
+      <p>
+            This project focuses on designing a low-power, solar-powered electric fence
+    system with adaptive voltage control. The system automatically adjusts
+    output intensity based on intrusion frequency while maintaining safety
+    limits to prevent serious injury. A mobile application was developed to
+    monitor intrusion logs and configure system parameters remotely.
+      </p>
+      <div class="tech-tags">
+  <span>ESP32</span>
+  <span>MAX30100</span>
+  <span>Flutter</span>
+  <span>Healthcare IoT</span>
+</div>
+
+      <p class="role">Role: Hardware, Firmware & App Developer</p>
+    </div>
+
+    <div class="project-card">
+            <div class="project-image"
+     style="background-image:url('invisilock.jpg');">
+</div>
+
+      <h3>Dhivya Kavach – Women Safety Jacket</h3>
+      <p>
+        Dhivya Kavach is a wearable safety solution designed to provide immediate
+    assistance during emergency situations. It integrates motion detection,
+    GSM, GPS, and self-defence triggering mechanisms to automatically send
+    alert messages and real-time location details to emergency contacts and
+    authorities.
+      </p>
+      <div class="tech-tags">
+  <span>ESP32</span>
+  <span>MAX30100</span>
+  <span>Flutter</span>
+  <span>Healthcare IoT</span>
+</div>
+
+      <p class="role">Role: Embedded Systems Engineer</p>
+    </div>
+
+    <div class="project-card">
+            <div class="project-image"
+     style="background-image:url('invisilock.jpg');">
+</div>
+
+      <h3>Low-Cost Digital Smart Lock</h3>
+      <p>
+            This project involves the development of a cost-effective digital smart
+    lock using ESP8266 with password, PIN, and fingerprint-based authentication.
+    A companion Flutter application enables remote lock control, status
+    monitoring, notifications, and configuration. The system supports dual
+    power operation and audio feedback for improved usability and reliability.
+      </p>
+      <div class="tech-tags">
+  <span>ESP32</span>
+  <span>MAX30100</span>
+  <span>Flutter</span>
+  <span>Healthcare IoT</span>
+</div>
+
+      <p class="role">Role: Embedded Systems & App Developer</p>
+    </div>
+
+  </div>
+</section>
+<section id="achievements">
+  <h2>Achievements & Certifications</h2>
+
+  <ul class="achievements-list">
+
+    <li>
+      🥇 <b>Awarded 1st Place</b> in <b>V-VISION 2025</b> –
+      National Level Project Expo at Vidya Vikas Institute of Engineering and Technology..
+    </li>
+
+    <li>
+      🥉 <b>Awarded 3rd Place</b> in <b>NEWENTURE 2025</b> –
+      Idea Pitch Contest at Vidya Vikas Institute of Engineering and Technology.
+    </li>
+
+    <li>
+      🥉 <b>Awarded 3rd Place</b> in <b>VRIDDHEEE 2025</b> –
+      State Level Project Competition at Vidyavardhaka College of Engineering.
+    </li>
+
+    <li>
+      <b>Project Participant</b> – <b>INNOVVIET 2025</b> Hackathon,
+      focused on innovative engineering solutions and rapid prototyping at Vidya Vikas Institute of Engineering and Technology.
+    </li>
+
+    <li>
+      <b>Project Presenter</b> – <b>AVEEESHKAR 2025</b>,
+      State Level Project Competition at Vidya Vikas Institute of Engineering and Technology.
+    </li>
+
+    <li>
+      Attended <b>UPCITI 2025</b> Workshop on Power Electronics Drives
+      and Electric Vehicles at Vidya Vikas Institute of Engineering and Technology.
+    </li>
+
+  </ul>
 </section>
 
-<section>
+
+
+<section id="resume" style="text-align:center;">
+  <a href="Darshan_C_Resume.pdf" target="_blank" class="resume-btn">
+    Download Resume
+  </a>
+</section>
+
+<section id="contact">
   <h2>Contact</h2>
-  <p>Email: cd546690@gmail.com</p>
-  <p>Phone: +91 6361840169</p>
-  <p>LinkedIn: linkedin.com/in/yourprofile</p>
+
+  <div class="contact-icons">
+    <a href="mailto:cd546690@gmail.com">
+      <i class="fas fa-envelope"></i> Email
+    </a>
+
+    <a href="tel:+916361840169">
+      <i class="fas fa-phone"></i> Phone
+    </a>
+
+    <a href="https://github.com/darshancbt" target="_blank">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+
+    <a href="https://linkedin.com/in/yourlinkedin" target="_blank">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+  </div>
 </section>
+
 
 
 </body>
